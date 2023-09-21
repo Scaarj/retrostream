@@ -1,8 +1,9 @@
 #include "Author.h"
 
-using namespace util;
+using namespace data;
 
-Author::Author()
-{
+Author::Author(QString name) : name(name) {
+}
 
+Author::Author(Id id, QString name) : Base(id), name(name) {
 }

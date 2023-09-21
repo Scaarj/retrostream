@@ -2,17 +2,17 @@
 
 #include <QString>
 
-namespace util {
-class Id
-{
+namespace data {
+class Id {
 public:
 	Id();
+	Id(QString id);
+	Id(int id);
 
-	bool operator==(const Id& other) const {
-		return id == other.id;
-	}
+	bool operator==(const Id& other) const;
+	bool valid() const;
 
 public:
-	QString id;
+	QString value;
 };
 } // namespace util

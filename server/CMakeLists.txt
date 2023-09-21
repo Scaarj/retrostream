@@ -2,17 +2,26 @@ project(server LANGUAGES CXX)
 
 set(SERVER_SOURCES
     src/GamesRepository.cpp
-    src/Util/Author.cpp
-    src/Util/Game.cpp
-    src/Util/Id.cpp
+    src/Database.cpp
+    src/drivers/DatabaseDriver.cpp
+    src/drivers/MemoryDriver.cpp
+    src/util/Author.cpp
+    src/util/Base.cpp
+    src/util/Game.cpp
+    src/util/Id.cpp
 )
 
 set(SERVER_HEADERS
     src/AbstractRepository.h
+    src/Database.h
+    src/drivers/DatabaseDriver.h
+    src/drivers/Driver.h
+    src/drivers/MemoryDriver.h
     src/GamesRepository.h
-    src/Util/Author.h
-    src/Util/Game.h
-    src/Util/Id.h
+    src/util/Author.h
+    src/util/Base.h
+    src/util/Game.h
+    src/util/Id.h
 )
 
 add_library(

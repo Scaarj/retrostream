@@ -1,15 +1,17 @@
 #pragma once
 
-#include <string>
+#include <QString>
 
-#include "Util/id.h"
+#include "Util/Base.h"
 
-namespace util {
-class Author {
+namespace data {
+class Author : public Base {
 public:
-	Author();
+	Author() = default;
+	Author(QString name);
+	Author(Id id, QString name);
 
-private:
-	Id id;
+public:
+	QString name;
 };
-} // namespace util
+} // namespace data

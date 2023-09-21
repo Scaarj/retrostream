@@ -5,25 +5,17 @@
 
 #include "Util/Author.h"
 
-namespace util {
-class Game
-{
+namespace data {
+class Game : public Base {
 public:
-	Game();
-
-	bool operator==(const Game& other) const {
-		return id == other.id && name == other.name;
-	}
-
-	bool operator!=(const Game& other) const {
-		return !operator==(other);
-	}
+	Game() = default;
+	Game(Author author, QString name, QString description, QImage preview);
+	Game(Id id, Author author, QString name, QString description, QImage preview);
 
 public:
-	Id id;
 	Author author;
 	QString name;
 	QString description;
 	QImage preview;
 };
-} // namespace util
+} // namespace data

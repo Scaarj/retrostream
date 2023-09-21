@@ -1,8 +1,18 @@
 #include "Game.h"
 
-using namespace util;
+using namespace data;
 
-Game::Game()
-{
+data::Game::Game(Author author, QString name, QString description, QImage preview)
+	: author(author)
+	, name(name)
+	, description(description)
+	, preview(preview) {
+}
 
+Game::Game(Id id, Author author, QString name, QString description, QImage preview)
+	: Base(id)
+	, author(author)
+	, name(name)
+	, description(description)
+	, preview(preview) {
 }
