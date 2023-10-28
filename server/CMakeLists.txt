@@ -5,10 +5,11 @@ set(SERVER_SOURCES
     src/Database.cpp
     src/drivers/DatabaseDriver.cpp
     src/drivers/MemoryDriver.cpp
-    src/util/Author.cpp
-    src/util/Base.cpp
-    src/util/Game.cpp
-    src/util/Id.cpp
+    src/data/Author.cpp
+    src/data/Base.cpp
+    src/data/Game.cpp
+    src/data/Id.cpp
+    src/http/HttpServer.cpp
 )
 
 set(SERVER_HEADERS
@@ -18,10 +19,11 @@ set(SERVER_HEADERS
     src/drivers/Driver.h
     src/drivers/MemoryDriver.h
     src/GamesRepository.h
-    src/util/Author.h
-    src/util/Base.h
-    src/util/Game.h
-    src/util/Id.h
+    src/data/Author.h
+    src/data/Base.h
+    src/data/Game.h
+    src/data/Id.h
+    src/http/HttpServer.h
 )
 
 add_library(

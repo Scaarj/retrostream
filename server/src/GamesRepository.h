@@ -3,7 +3,7 @@
 #include <QVariantMap>
 
 #include "AbstractRepository.h"
-#include "Util/Game.h"
+#include "data/Game.h"
 
 template <typename T>
 class GamesRepository : public AbstractRepository<data::Game> {

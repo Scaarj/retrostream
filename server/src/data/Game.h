@@ -3,7 +3,7 @@
 #include <QImage>
 #include <QString>
 
-#include "Util/Author.h"
+#include "data/Author.h"
 
 namespace data {
 class Game : public Base {

@@ -1,7 +1,5 @@
 #include "../pch.h"
 
-#include <QDebug>
-
 #include "GamesRepository.h"
 #include "drivers/MemoryDriver.h"
 

@@ -15,4 +15,4 @@ public:
 public:
 	QString value;
 };
-} // namespace util
+} // namespace data

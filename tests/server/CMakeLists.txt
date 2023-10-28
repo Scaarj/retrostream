@@ -2,6 +2,7 @@ add_executable(
     ${SERVER_TESTS_PROJECT_NAME}
     main.cpp
     GamesRepositoryTest.cpp
+    HttpServerTest.cpp
 )
 
 target_link_libraries(

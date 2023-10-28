@@ -2,7 +2,7 @@
 
 #include <QString>
 
-#include "Util/Base.h"
+#include "data/Base.h"
 
 namespace data {
 class Author : public Base {
